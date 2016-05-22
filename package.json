@@ -1,6 +1,6 @@
 {
   "name": "chai-rx-assert",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Plugin for the chai assert library for comparing observables in tests",
   "main": "index.js",
   "scripts": {
