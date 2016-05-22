@@ -1,6 +1,6 @@
 # chai-rx-assert
 Plugin for the chai assert library for comparing observables in tests</br>
-(Thin wrapper around [rx-assert](https://github.com/AlexMost/rx-assert) library.)
+(Thin wrapper around [rx-assert](https://github.com/AlexMost/rx-assert) library)
 
 # Installation
 ```bash
