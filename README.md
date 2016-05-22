@@ -18,7 +18,7 @@ it('should return messages with delay', () => {
     var xs = scheduler.createHotObservable(onNext(250, 2), onCompleted(550));
 
     var results = scheduler.startScheduler(() => {
-	return xs.delay(100, scheduler);
+        return xs.delay(100, scheduler);
     });
 
     expect(results.messages).to.rxEqual([onNext(350, 2), onCompleted(650)]) // assert ok
