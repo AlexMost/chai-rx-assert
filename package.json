@@ -1,6 +1,6 @@
 {
   "name": "chai-rx-assert",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Plugin for the chai assert library for comparing observables in tests",
   "main": "index.js",
   "scripts": {
@@ -14,7 +14,8 @@
     "rxjs",
     "assert",
     "chai",
-    "plugin"
+    "plugin",
+    "chai-plugin"
   ],
   "author": "Alexander Mostovenko",
   "license": "ISC",
