@@ -12,19 +12,19 @@ var subscribe = Rx.ReactiveTest.subscribe;
 
 
 describe('test rx-assert methods are present', function() {
-	it('check isRxEqual function is present', function() {
-		var rxEqual = expect(null).to.rxEqual;
-		expect(rxEqual).to.be.a('function');
-	});
+    it('check isRxEqual function is present', function() {
+        var rxEqual = expect(null).to.rxEqual;
+        expect(rxEqual).to.be.a('function');
+    });
 
-	it('isRxEqual should work when expected is list', function() {
-		var actual = [onNext(300, 1), onNext(400, 2)];
-		var expected = [onNext(300, 1), onNext(400, 2)];
-		expect(actual).rxEqual(expected);
-	});
+    it('isRxEqual should work when expected is list', function() {
+        var actual = [onNext(300, 1), onNext(400, 2)];
+        var expected = [onNext(300, 1), onNext(400, 2)];
+        expect(actual).rxEqual(expected);
+    });
 
-	it('isRxEqual should work when expected is arguments', function() {
-		var actual = [onNext(300, 1), onNext(400, 2)];
-		expect(actual).rxEqual(onNext(300, 1), onNext(400, 2));
-	});
+    it('isRxEqual should work when expected is arguments', function() {
+        var actual = [onNext(300, 1), onNext(400, 2)];
+        expect(actual).rxEqual(onNext(300, 1), onNext(400, 2));
+    });
 });
